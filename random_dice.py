@@ -10,10 +10,10 @@ try:                                                            #READ LAST COMME
     print("Manual=False")
 except ModuleNotFoundError:
     manual=True
-    step("Error while loading 'keyboard' module")
+    print("Error while loading 'keyboard' module")
     print("Manual=True")
 
-def step(s):
+def step(s):                                                    #FOR DEBUG, PRINT WHAT'S HAPPENING
     global i
     i+=1
     print(f"{i}:: ",s.capitalize())
